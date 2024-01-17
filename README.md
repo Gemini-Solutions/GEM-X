@@ -9,15 +9,15 @@ In recent years of our automation, we observed that a significant amount, approx
 Gem-X addresses these challenges seamlessly, offering an efficient solution to streamline the process of creating locators for UI elements.
 
 ## Features of Gem-X
-1. Creates xpath files by simply passing URL
-2. Gem-X keeps track of all the xpath files generated, thus providing a resource-efficient solution
-3. Gem-X uses Selenium and BeautifulSoup to extract the DOM structure. This robust approach ensures the generation of XPath locators for virtually every element available on UI
-4. Gem-X removes the same xpaths and adds indexes to elements if required
+* Gem-X simplifies the process of generating xpath files by only taking URL as input and asking the user to authorize the application manually if needed
+* Gem-X keeps track of all the xpath files generated, thus providing a resource-efficient solution
+* Gem-X uses Selenium and BeautifulSoup to extract the DOM structure. This robust approach ensures the generation of XPath locators for virtually every element available on UI
+* Gem-X eliminates redundant XPaths and adds indexes to elements, enhancing the correctness of the generated locators. This feature allows for a more refined and optimized xpath outputs
 
 ## Prequisite
-Before cloning this repo, make sure that you have **Python** and **pip** installed on your system
+To use this utility, please make sure that you have **Python** and **pip** installed on your system
 
-## Steps to use this utility?
+## Steps to use this utility
 - Clone the repository by using git clone command:
   ```https://github.com/Gemini-Solutions/GEM-X.git```
 - Create a virtual environment using the command given below. Click [here](https://stackoverflow.com/a/71086705/9985849) to learn why we need a virtual python environment.
@@ -26,11 +26,11 @@ Before cloning this repo, make sure that you have **Python** and **pip** install
   ```<name of your virtual environment>\Scripts\activate```
   **Note** If you are getting UnauthorizedAccessError like ![UnauthorizedAccessError](https://github.com/Gemini-Solutions/GEM-X/blob/main/media/VirtualEnvError.png)
 , run command ```Set-ExecutionPolicy Unrestricted -Scope Process``` before activating your virtual environment. On Gemini machines, you may have retrictions to Set Exacution policy for the current sesion only, so make sure to execute this command each time before activating your virtual environment```
-- Run ```pip install -r config/requirements.txt```. This command will install all the requirement needed to run this utility
+- Run ```pip install -r config/requirements.txt```. This command will install all the requirements needed to run this utility
 - Run XPathGenerator.py file by passing a valid URL
 
   ## Technology used to create this utility:
-  I used following tech-stack to create this utility
+  I used the following tech-stack to create this utility
   1. Python
   2. Selenium
   3. BeautifulSoup
