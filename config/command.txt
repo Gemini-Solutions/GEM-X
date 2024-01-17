@@ -1,0 +1,13 @@
+# upgrade pip
+python.exe -m pip install --upgrade pip
+
+# create venv
+python -m venv <venv>
+
+# launch venv
+<venv>\Scripts\activate
+
+# before running activate command on restricted systems, use code below
+Set-ExecutionPolicy Unrestricted -Scope Process
+API key = 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
+setx OPENAI_API_KEY "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"
