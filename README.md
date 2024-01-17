@@ -18,26 +18,29 @@ Gem-X addresses these challenges seamlessly, offering an efficient solution to s
 To use this utility, please make sure that you have **Python** and **pip** installed on your system
 
 ## Steps to use this utility
-- Clone the repository by using git clone command:
-  ```https://github.com/Gemini-Solutions/GEM-X.git```
-- Create a virtual environment using the command given below. Click [here](https://stackoverflow.com/a/71086705/9985849) to learn why we need a virtual python environment.
-  ```python -m venv <name of your virtual environment>```
-- Activate virtual environment by using the command:
-  ```<name of your virtual environment>\Scripts\activate```
-  **Note** If you are getting UnauthorizedAccessError like ![UnauthorizedAccessError](https://github.com/Gemini-Solutions/GEM-X/blob/main/media/VirtualEnvError.png)
-, run command ```Set-ExecutionPolicy Unrestricted -Scope Process``` before activating your virtual environment. On Gemini machines, you may have retrictions to Set Exacution policy for the current sesion only, so make sure to execute this command each time before activating your virtual environment```
-- Run ```pip install -r config/requirements.txt```. This command will install all the requirements needed to run this utility
-- Run XPathGenerator.py file by passing a valid URL
+- Clone the repository by using the command: ```https://github.com/Gemini-Solutions/GEM-X.git```
+- Create a virtual environment using the command ```python -m venv <name of your virtual environment>```
+- Activate the virtual environment by using the command: ```<name of your virtual environment>\Scripts\activate```
 
-  ## Technology used to create this utility:
+  **Note** If you are getting UnauthorizedAccessError like given in the screenshot below, run the command ```Set-ExecutionPolicy Unrestricted -Scope Process``` before activating your virtual environment. On Gemini machines, you may have restrictions to set execution policy for the current session only, so make sure to execute this command each time before activating your virtual environment
+  ![UnauthorizedAccessError](https://github.com/Gemini-Solutions/GEM-X/blob/main/media/VirtualEnvError.png)
+  
+- Download all the dependencies required to run this utility by using the command: ```pip install -r config/requirements.txt```
+- Run ```XPathGenerator.py``` file to generate xpaths files
+
+## Technology used to create this utility:
   I used the following tech-stack to create this utility
-  1. Python
-  2. Selenium
-  3. BeautifulSoup
+  * Python
+  * Selenium
+  * BeautifulSoup
 
 ## Future Plans:
 The Gem-X utility will be enhanced significantly in the upcoming days with features, including but not limited to:
-1. **PyPI Package Integration:** Users will be able to use Gem-X seamlessly by downloading all its features with a single, convenient pip command
-2. **Java Migration for Integration:** I am actively working on migrating Gem-X to Java, facilitating seamless integration with GemJar and Quantic frameworks, thereby broadening its compatibility and utility
-3. **Human-Readable Element Names:** With added OpenAI libraries, Gem-X will generate more human-readable names for the created xpaths
-4. **Customization Options:** Gem-X will empower users with the flexibility to customize the utility according to their specific needs. This feature ensures that the tool aligns perfectly with individual requirements, offering a tailored and user-centric experience.
+* **PyPI Package Integration:** Users will be able to use Gem-X seamlessly by downloading all its features with a single, convenient pip command
+* **Java Migration for Integration:** I am actively working on migrating Gem-X to Java, facilitating seamless integration with GemJar and Quantic frameworks, thereby broadening its compatibility and utility
+* **Human-Readable Element Names:** With added OpenAI libraries, Gem-X will generate more human-readable names for the created xpaths
+* **Customization Options:** Gem-X will empower users with the flexibility to customize the utility according to their specific needs. This feature ensures that the tool aligns perfectly with individual requirements, offering a tailored and user-centric experience
+
+## References:
+* [Why do we need a virtual environment in Python](https://stackoverflow.com/a/71086705/9985849)
+* [Is there any generic function to check if the page has completely loaded through Selenium?](https://stackoverflow.com/questions/50327132/do-we-have-any-generic-function-to-check-if-page-has-completely-loaded-in-seleni)
